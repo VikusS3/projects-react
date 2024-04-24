@@ -1,12 +1,34 @@
 /* eslint-disable react/prop-types */
-export function AnimeCard({
-  image,
-  name,
-  nickname,
-  skills,
-  weaknesses,
-  index,
-}) {
+import { useEffect, useState } from "react";
+
+const url = "https://any-anime.p.rapidapi.com/v1/anime/gif/1";
+const options = {
+  method: "GET",
+  headers: {
+    "X-RapidAPI-Key": "fa2f840eb9msh46ff1db4fb5a394p158470jsn01e9bdb3d085",
+    "X-RapidAPI-Host": "any-anime.p.rapidapi.com",
+  },
+};
+
+const fetchRandomAnimeImage = async () => {
+  const response = await fetch(url, options);
+  const data = await response.json();
+  console.log(data.images);
+  return data.images;
+};
+
+export function AnimeCard({ name, nickname, skills, weaknesses, index }) {
+  const [animeData, setAnimeData] = useState([null]);
+ 
+  useEffect(() => {
+    fetchRandomAnimeImage().then((data) => setAnimeData(data));
+  }, []);
+
+  const handleClickedAnime = () => {
+    fetchRandomAnimeImage().then((data) => setAnimeData(data));
+   
+  };
+
   return (
     <>
       <article
@@ -14,9 +36,9 @@ export function AnimeCard({
         className=" bg-bg-300 rounded-lg py-5 px-2 m-2 text-center w-full flex flex-col justify-between items-center "
       >
         <header className="flex justify-center items-center mb-5">
-          {image && (
+          {animeData && (
             <img
-              src={image}
+              src={animeData[0]}
               alt={name}
               className="sm:w-[200px] sm:h-[200px] w-[300px] h-[300px] rounded-sm"
             />
@@ -38,8 +60,11 @@ export function AnimeCard({
           <button className=" bg-primary-100  text-white py-3 px-7 rounded-lg text-xl hover:scale-110 transition-transform ease-in-out duration-200">
             Descargar
           </button>
-          <button className=" bg-primary-100  text-white py-3 px-7 rounded-lg text-xl hover:scale-110 transition-transform ease-in-out duration-200">
-            Compartir
+          <button
+            onClick={handleClickedAnime}
+            className=" bg-primary-100  text-white py-3 px-7 rounded-lg text-xl hover:scale-110 transition-transform ease-in-out duration-200"
+          >
+            Mostrar Imagen
           </button>
         </footer>
       </article>
