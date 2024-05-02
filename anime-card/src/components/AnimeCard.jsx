@@ -8,7 +8,7 @@ export function AnimeCard({ name, nickname, skills, weaknesses, index }) {
     <>
       <article
         key={index}
-        className=" bg-bg-300 rounded-lg py-5 px-2 m-2 text-center w-full flex flex-col justify-between items-center "
+        className=" bg-bg-300 rounded-lg py-5 px-2 m-2 text-center w-full flex flex-col justify-between items-center shadow-slate-500 shadow"
       >
         <header className="flex justify-center items-center mb-5">
           {animeImage && (
@@ -32,9 +32,6 @@ export function AnimeCard({ name, nickname, skills, weaknesses, index }) {
           </div>
         </div>
         <footer className="flex gap-10 w-full justify-center items-center mt-5 flex-col">
-          <button className=" bg-primary-100  text-white py-3 px-7 rounded-lg text-xl hover:scale-110 transition-transform ease-in-out duration-200">
-            Descargar
-          </button>
           <button
             onClick={showImage}
             className=" bg-primary-100  text-white py-3 px-7 rounded-lg text-xl hover:scale-110 transition-transform ease-in-out duration-200"
