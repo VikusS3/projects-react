@@ -1,0 +1,54 @@
+.article {
+  background-color: #040e24;
+  padding: 1rem;
+  border-radius: 16px;
+}
+
+.article-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.article-header-icons {
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.article-header-icons svg:hover {
+  color: #ffffff;
+}
+
+.main-example {
+  font-style: italic;
+}
+
+.article-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.article-footer button {
+  background-color: #040e24;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.article-footer button:first-child:hover {
+  background-color: #58ee60;
+  color: #040e24;
+}
+
+.article-footer button:last-child:hover {
+  background-color: #ff3b3b;
+  color: #040e24;
+}
