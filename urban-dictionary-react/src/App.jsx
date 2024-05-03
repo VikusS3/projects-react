@@ -1,37 +1,47 @@
 import "./App.css";
-import { Dictionary } from "./components/Dictionary";
 import { SearchIcon } from "./components/Icons";
-import { list } from "./mocks/data.json";
+import { Word } from "./components/Word";
+import { useQuery } from "./hooks/useQuery";
+import { useWord } from "./hooks/useWord";
 
 function App() {
+  const { query, error, setQuery } = useQuery();
+  const { getDictionary, data, loading } = useWord({ query });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    getDictionary({ word: query });
+  };
+
+  const handleChange = (e) => {
+    const newWord = e.target.value;
+    setQuery(newWord);
+  };
+
   return (
     <div>
       <header className="header-article">
         <h1>Urban Dictionary</h1>
-      </header>
-      <form action="" className="form">
-        <input type="text" placeholder="Sigma, Loyal, etc" />
-        <button>
-          <SearchIcon />
-        </button>
-      </form>
 
-      <main>
-        <ul>
-          {list.slice(0, 5).map((item) => (
-            <li key={item.id}>
-              <Dictionary
-                word={item.word}
-                definition={item.definition}
-                example={item.example}
-                thumbsUp={item.thumbs_up}
-                thumbsDown={item.thumbs_down}
-                author={item.author}
-                written_on={item.written_on}
-              />
-            </li>
-          ))}
-        </ul>
+        <form action="" className="form" onSubmit={handleSubmit}>
+          <input
+            type="text"
+            placeholder="Sigma, Loyal, etc"
+            onChange={handleChange}
+            value={query}
+          />
+          <button type="submit">
+            <SearchIcon />
+          </button>
+        </form>
+        {error && <p>{error}</p>}
+      </header>
+      <main className="main-content">
+        {loading ? (
+          <div className="loader"></div>
+        ) : (
+          <Word data={data} />
+        )}
       </main>
     </div>
   );

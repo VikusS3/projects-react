@@ -2,12 +2,15 @@
   background-color: #040e24;
   padding: 1rem;
   border-radius: 16px;
+  max-width: 600px;
+  min-width: 200px;
 }
 
 .article-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 
 .article-header-icons {
