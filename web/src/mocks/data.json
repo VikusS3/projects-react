@@ -1,0 +1,32 @@
+{
+    "proyectos": [
+      {
+        "id": 1,
+        "nombre": "Proyecto 1",
+        "imagen": "https://sigdeletras.com/images/blog/202004_react_leaflet/react.png",
+        "descripcion": "Descripción del Proyecto 1.",
+        "activo": true,
+        "repo_url": "https://github.com/tu_usuario/proyecto1",
+        "url": "https://www.ejemplo.com/proyecto1"
+      },
+      {
+        "id": 2,
+        "nombre": "Proyecto 2",
+        "imagen": "https://sigdeletras.com/images/blog/202004_react_leaflet/react.png",
+        "descripcion": "Descripción del Proyecto 2.",
+        "activo": false,
+        "repo_url": "https://github.com/tu_usuario/proyecto2",
+        "url": "https://www.ejemplo.com/proyecto2"
+      },
+      {
+        "id": 3,
+        "nombre": "Proyecto 3",
+        "imagen": "https://sigdeletras.com/images/blog/202004_react_leaflet/react.png",
+        "descripcion": "Descripción del Proyecto 3.",
+        "activo": true,
+        "repo_url": "https://github.com/tu_usuario/proyecto3",
+        "url": "https://www.ejemplo.com/proyecto3"
+      }
+    ]
+  }
+  
