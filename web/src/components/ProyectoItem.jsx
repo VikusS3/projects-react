@@ -1,4 +1,7 @@
 /* eslint-disable react/prop-types */
+import Atropodos from "atropos/react";
+import { Github, Link } from "./Icons";
+
 export function ProyectoItem({
   name,
   description,
@@ -8,23 +11,41 @@ export function ProyectoItem({
   active,
 }) {
   return (
-    <article className="flex flex-col justify-center items-center gap-5 bg-bg-300 rounded-lg">
-      <header>
-        <img src={image} alt={name} className=" w-64 rounded-t-lg"/>
-      </header>
-      <main className=" text-text-100">
-        <h2>{name}</h2>
-        <p>{description}</p>
-      </main>
-      <footer>
-        <a href={url} target="_blank" rel="noreferrer">
-          Ver proyecto
-        </a>
-        <a href={github} target="_blank" rel="noreferrer">
-          Ver código
-        </a>
-        <span className={active ? "text-green-500 animate-ping" : ""}>•</span>
-      </footer>
-    </article>
+    <Atropodos 
+    highlight={false} 
+    shadow={false} 
+    rotateXMax={15}
+    rotateYMax={15}
+    >
+      <div className="flex flex-col justify-center max-w-[300px]">
+        <header className="w-full">
+          <img
+          rel="preload"
+            src={image}
+            alt={name}
+            className="rounded-t-lg object-center"
+            data-atropos-offset="0"
+          />
+        </header>
+        <main className=" text-text-100 bg-bg-300 p-5">
+          <div className="flex  gap-3 items-center">
+            <h2 className="text-xl font-semibold">{name}</h2>{" "}
+            <span className={active ? "text-green-500 animate-ping" : ""}>
+              •
+            </span>
+          </div>
+
+          <p className=" text-text-200">{description}</p>
+        </main>
+        <footer className="text-white bg-bg-300 h-auto rounded-b-lg pb-3 flex justify-around items-center w-full">
+          <a href={url} target="_blank" rel="noreferrer" role="link"  aria-label="Ir a la pagina web del proyecto">
+            <Link />
+          </a>
+          <a href={github} target="_blank" rel="noreferrer" role="link"  aria-label="Ir al repositorio de github del proyecto">
+            <Github />
+          </a>
+        </footer>
+      </div>
+    </Atropodos>
   );
 }
