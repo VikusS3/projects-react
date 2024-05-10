@@ -1,32 +1,31 @@
 {
-    "proyectos": [
-      {
-        "id": 1,
-        "nombre": "Urban Dictionary Clone",
-        "imagen": "https://sigdeletras.com/images/blog/202004_react_leaflet/react.png",
-        "descripcion": "Proyecto Clon de la página Urban Dictionary.",
-        "activo": true,
-        "repo_url": "https://github.com/tu_usuario/proyecto1",
-        "url": "https://www.ejemplo.com/proyecto1"
-      },
-      {
-        "id": 2,
-        "nombre": "Random Anime Card",
-        "imagen": "https://sigdeletras.com/images/blog/202004_react_leaflet/react.png",
-        "descripcion": "Proyecto que te muestra una carta de un anime aleatorio.",
-        "activo": false,
-        "repo_url": "https://github.com/tu_usuario/proyecto2",
-        "url": "https://www.ejemplo.com/proyecto2"
-      },
-      {
-        "id": 3,
-        "nombre": "Proyecto 3",
-        "imagen": "https://sigdeletras.com/images/blog/202004_react_leaflet/react.png",
-        "descripcion": "Descripción del Proyecto 3.",
-        "activo": true,
-        "repo_url": "https://github.com/tu_usuario/proyecto3",
-        "url": "https://www.ejemplo.com/proyecto3"
-      }
-    ]
-  }
-  
+  "proyectos": [
+    {
+      "id": 1,
+      "nombre": "Urban Dictionary Clone",
+      "imagen": "/urban-dictionary.webp",
+      "descripcion": "Proyecto Clon de la página Urban Dictionary.",
+      "activo": true,
+      "repo_url": "https://github.com/VikusS3/projects-react/tree/main/urban-dictionary-react",
+      "url": "https://663e35b03c60a203544bd21e--earnest-sunshine-9db224.netlify.app/"
+    },
+    {
+      "id": 2,
+      "nombre": "Random Anime Card",
+      "imagen": "/anime-card.webp",
+      "descripcion": "Proyecto que te muestra una carta de un anime aleatorio.",
+      "activo": false,
+      "repo_url": "https://github.com/VikusS3/projects-react/tree/main/anime-card",
+      "url": "https://www.ejemplo.com/proyecto2"
+    },
+    {
+      "id": 3,
+      "nombre": "Proyecto 3",
+      "imagen": "https://img.freepik.com/vector-gratis/proximamente-fondo-diseno-efecto-luz-enfoque_1017-27277.jpg",
+      "descripcion": "Promixamente...",
+      "activo": false,
+      "repo_url": "",
+      "url": ""
+    }
+  ]
+}

@@ -19,16 +19,24 @@ export function AnimeCard({ name, nickname, skills, weaknesses, index }) {
             />
           )}
         </header>
-        <div className="text-white">
-          <div className="w-full flex flex-row justify-between">
-            <h2 className="text-3xl font-bold sm:text-xl">{name}</h2>
-            <span className="text-3xl sm:text-xl">{nickname}</span>
+        <div className="flex flex-col justify-center items-center">
+          <div className="w-full flex flex-row justify-between gap-2">
+            <h2 className="text-3xl font-bold sm:text-xl text-text-100">
+              {name}
+            </h2>
+            <span className="text-3xl sm:text-xl text-text-200">
+              {nickname}
+            </span>
           </div>
           <div className="flex flex-col gap-2 mt-5">
-            <span className="text-2xl">Habilidades</span>
-            <p className="text-xl">{skills}</p>
-            <span className="text-2xl">Debilidades</span>
-            <p className=" text-">{weaknesses}</p>
+            <span className="text-2xl font-semibold text-text-100">
+              Habilidades
+            </span>
+            <p className="text-lg text-accent-100">{skills}</p>
+            <span className="text-2xl font-semibold text-text-100">
+              Debilidades
+            </span>
+            <p className=" text-lg text-accent-100">{weaknesses}</p>
           </div>
         </div>
         <footer className="flex gap-10 w-full justify-center items-center mt-5 flex-col">
