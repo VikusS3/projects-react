@@ -1,0 +1,104 @@
+{
+  "paises": [
+    {
+      "nombre": "Estados Unidos",
+      "codigo_iso": "US",
+      "zona_horaria": "America/New_York"
+    },
+    {
+      "nombre": "China",
+      "codigo_iso": "CN",
+      "zona_horaria": "Asia/Shanghai"
+    },
+    {
+      "nombre": "India",
+      "codigo_iso": "IN",
+      "zona_horaria": "Asia/Kolkata"
+    },
+    {
+      "nombre": "Japón",
+      "codigo_iso": "JP",
+      "zona_horaria": "Asia/Tokyo"
+    },
+    {
+      "nombre": "Alemania",
+      "codigo_iso": "DE",
+      "zona_horaria": "Europe/Berlin"
+    },
+    {
+      "nombre": "Reino Unido",
+      "codigo_iso": "GB",
+      "zona_horaria": "Europe/London"
+    },
+    {
+      "nombre": "Francia",
+      "codigo_iso": "FR",
+      "zona_horaria": "Europe/Paris"
+    },
+    {
+      "nombre": "Brasil",
+      "codigo_iso": "BR",
+      "zona_horaria": "America/Sao_Paulo"
+    },
+    {
+      "nombre": "Italia",
+      "codigo_iso": "IT",
+      "zona_horaria": "Europe/Rome"
+    },
+    {
+      "nombre": "Canadá",
+      "codigo_iso": "CA",
+      "zona_horaria": "America/Toronto"
+    },
+    {
+      "nombre": "Rusia",
+      "codigo_iso": "RU",
+      "zona_horaria": "Europe/Moscow"
+    },
+    {
+      "nombre": "Australia",
+      "codigo_iso": "AU",
+      "zona_horaria": "Australia/Sydney"
+    },
+    {
+      "nombre": "España",
+      "codigo_iso": "ES",
+      "zona_horaria": "Europe/Madrid"
+    },
+    {
+      "nombre": "Corea del Sur",
+      "codigo_iso": "KR",
+      "zona_horaria": "Asia/Seoul"
+    },
+    {
+      "nombre": "Indonesia",
+      "codigo_iso": "ID",
+      "zona_horaria": "Asia/Jakarta"
+    },
+    {
+      "nombre": "México",
+      "codigo_iso": "MX",
+      "zona_horaria": "America/Mexico_City"
+    },
+    {
+      "nombre": "Turquía",
+      "codigo_iso": "TR",
+      "zona_horaria": "Europe/Istanbul"
+    },
+    {
+      "nombre": "Países Bajos",
+      "codigo_iso": "NL",
+      "zona_horaria": "Europe/Amsterdam"
+    },
+    {
+      "nombre": "Arabia Saudita",
+      "codigo_iso": "SA",
+      "zona_horaria": "Asia/Riyadh"
+    },
+    {
+      "nombre": "Suiza",
+      "codigo_iso": "CH",
+      "zona_horaria": "Europe/Zurich"
+    }
+  ]
+}
