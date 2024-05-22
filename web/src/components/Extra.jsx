@@ -10,7 +10,7 @@ import {
 import Atropodos from "atropos/react";
 export function Extra() {
   return (
-    <section className="flex flex-row flex-wrap justify-center items-center gap-6 bg-bg-200 p-5 rounded-lg mt-5 border border-white">
+    <section className="flex flex-row flex-wrap justify-center items-center gap-6 bg-bg-200 p-5 rounded-lg mt-5 border border-white mb-10">
       <Atropodos highlight={false}>
         <ReactIcons className="w-16 h-16" />
       </Atropodos>
