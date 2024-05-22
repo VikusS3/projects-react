@@ -7,7 +7,7 @@
       "descripcion": "Proyecto Clon de la página Urban Dictionary.",
       "activo": true,
       "repo_url": "https://github.com/VikusS3/projects-react/tree/main/urban-dictionary-react",
-      "url": "https://663e35b03c60a203544bd21e--earnest-sunshine-9db224.netlify.app/"
+      "url": "https://urban-dictionary-clon.netlify.app/"
     },
     {
       "id": 2,
@@ -16,16 +16,16 @@
       "descripcion": "Proyecto que te muestra una carta de un anime aleatorio.",
       "activo": false,
       "repo_url": "https://github.com/VikusS3/projects-react/tree/main/anime-card",
-      "url": "https://www.ejemplo.com/proyecto2"
+      "url": "https://animecard.netlify.app/"
     },
     {
       "id": 3,
       "nombre": "Proyecto 3",
-      "imagen": "https://img.freepik.com/vector-gratis/proximamente-fondo-diseno-efecto-luz-enfoque_1017-27277.jpg",
-      "descripcion": "Promixamente...",
-      "activo": false,
-      "repo_url": "",
-      "url": ""
+      "imagen": "/reloj-universal.webp",
+      "descripcion": "Proyecto que te muestra las horas de diferentes paises del mundo.",
+      "activo": true,
+      "repo_url": "https://github.com/VikusS3/projects-react/tree/main/reloj-universal",
+      "url": "https://universalhours.netlify.app/"
     }
   ]
 }
