@@ -20,7 +20,7 @@
     },
     {
       "id": 3,
-      "nombre": "Proyecto 3",
+      "nombre": "Universal Reloj",
       "imagen": "/reloj-universal.webp",
       "descripcion": "Proyecto que te muestra las horas de diferentes paises del mundo.",
       "activo": true,
