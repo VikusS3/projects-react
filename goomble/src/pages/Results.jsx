@@ -1,8 +1,12 @@
+import { useLocation } from "react-router-dom";
 import Header from "../components/Header";
 import Search from "../components/Search";
 import { SearchResults } from "../components/SearchResults";
 
 export default function Results() {
+  const location = useLocation();
+  const params = new URLSearchParams(location.search);
+  const query = params.get("query");
   return (
     <div className="bg-[#181A1B] h-screen overflow-y-auto w-full">
       <header className="flex p-6 justify-between items-center">
@@ -31,7 +35,7 @@ export default function Results() {
               e
             </span>
           </div>
-          <Search extraClass="mt-0" />
+          <Search extraClass="mt-0" initalQuery={query} />
         </div>
         <Header />
       </header>
