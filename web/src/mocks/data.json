@@ -3,26 +3,18 @@
     {
       "id": 1,
       "nombre": "Urban Dictionary Clone",
-      "imagen": "/urban-dictionary.webp",
-      "descripcion": "Proyecto Clon de la página Urban Dictionary.",
+      "imagen": "/urbandictionary.webp",
+      "descripcion": "Proyecto Clon de la página Urban Dictionary. Utilizando la API de Urban Dictionary para obtener los datos.",
       "activo": true,
       "repo_url": "https://github.com/VikusS3/projects-react/tree/main/urban-dictionary-react",
       "url": "https://urban-dictionary-clon.netlify.app/"
     },
+
     {
       "id": 2,
-      "nombre": "Random Anime Card",
-      "imagen": "/anime-card.webp",
-      "descripcion": "Proyecto que te muestra una carta de un anime aleatorio.",
-      "activo": false,
-      "repo_url": "https://github.com/VikusS3/projects-react/tree/main/anime-card",
-      "url": "https://animecard.netlify.app/"
-    },
-    {
-      "id": 3,
       "nombre": "Universal Reloj",
-      "imagen": "/reloj-universal.webp",
-      "descripcion": "Proyecto que te muestra las horas de diferentes paises del mundo.",
+      "imagen": "/universalhour.webp",
+      "descripcion": "Proyecto que te muestra las horas de diferentes paises del mundo. Solo usando javascript puro para obtener la hora de cada pais.",
       "activo": true,
       "repo_url": "https://github.com/VikusS3/projects-react/tree/main/reloj-universal",
       "url": "https://universalhours.netlify.app/"

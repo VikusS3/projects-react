@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import Atropodos from "atropos/react";
+
 import { Github, Link } from "./Icons";
 
 export function ProyectoItem({
@@ -11,56 +11,60 @@ export function ProyectoItem({
   active,
 }) {
   return (
-    <Atropodos
-      highlight={false}
-      shadow={false}
-      rotateXMax={15}
-      rotateYMax={15}
-      className="w-[350px] "
-    >
-      <div className="flex flex-col justify-center rounded-lg">
-        <header className="w-full">
+    <article className="flex flex-col relative items-center text-white rounded-lg border border-zinc-300/30 hover:scale-105 transition">
+      <header className="w-full">
+        <a
+          href={url}
+          className="group "
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Ir a la pagina web del proyecto
+        "
+        >
           <img
-            rel="preload"
             src={image}
             alt={name}
-            className="rounded-t-lg w-full h-[300px] "
+            className="w-full rounded-t-lg aspect-auto"
             data-atropos-offset="0"
           />
-        </header>
-        <main className=" text-text-100 bg-bg-300 p-5 w-full">
-          <div className="flex  gap-3 items-center">
-            <h2 className="text-xl font-semibold">{name}</h2>{" "}
-            <span
-              className={active ? "text-green-500 animate-ping font-bold" : ""}
-            >
-              •
-            </span>
-          </div>
+        </a>
+      </header>
+      <main className=" text-text-100  w-full p-4">
+        <div className="flex gap-3  justify-start items-center">
+          <h2 className="text-3xl font-semibold tracking-tighter">{name}</h2>
+          <span
+            className={active ? "text-green-500 animate-ping font-bold" : ""}
+          >
+            •
+          </span>
+        </div>
 
-          <p className=" text-text-200">{description}</p>
-        </main>
-        <footer className="text-white bg-bg-300 h-auto rounded-b-lg pb-3 flex justify-around items-center w-full">
-          <a
-            href={url}
-            target="_blank"
-            rel="noreferrer"
-            role="link"
-            aria-label="Ir a la pagina web del proyecto"
-          >
-            <Link />
-          </a>
-          <a
-            href={github}
-            target="_blank"
-            rel="noreferrer"
-            role="link"
-            aria-label="Ir al repositorio de github del proyecto"
-          >
-            <Github />
-          </a>
-        </footer>
-      </div>
-    </Atropodos>
+        <p className=" text-zinc-200 font-light mt-4 ">{description}</p>
+      </main>
+      <footer className="text-white gap-3  h-auto rounded-b-lg pb-3 flex w-full p-4">
+        <a
+          href={url}
+          target="_blank"
+          rel="noreferrer"
+          role="link"
+          aria-label="Ir a la pagina web del proyecto"
+          className="inline-flex items-center justify-center px-3 py-2 text-xs font-semibold text-center text-sky-700 bg-white transition border border-sky-700/60 rounded-lg hover:bg-sky-200  md:text-sm"
+        >
+          <Link />
+          Demo
+        </a>
+        <a
+          href={github}
+          target="_blank"
+          rel="noreferrer"
+          role="link"
+          className="inline-flex items-center justify-center px-3 py-2 text-xs font-semibold text-center text-black bg-white transition border border-black/60 rounded-lg hover:bg-zinc-300 md:text-sm"
+          aria-label="Ir al repositorio de github del proyecto"
+        >
+          <Github />
+          Codigo
+        </a>
+      </footer>
+    </article>
   );
 }
