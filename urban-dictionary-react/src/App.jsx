@@ -37,7 +37,7 @@ function App() {
         {error && <p>{error}</p>}
       </header>
       <main className="main-content">
-        {loading ? <p>C...</p> : <Word data={data} />}
+        {loading ? <p>Cargando...</p> : <Word data={data} />}
       </main>
     </div>
   );
