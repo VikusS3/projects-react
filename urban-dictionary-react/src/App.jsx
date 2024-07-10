@@ -37,11 +37,7 @@ function App() {
         {error && <p>{error}</p>}
       </header>
       <main className="main-content">
-        {loading ? (
-          <div className="loader"></div>
-        ) : (
-          <Word data={data} />
-        )}
+        {loading ? <p>C...</p> : <Word data={data} />}
       </main>
     </div>
   );
