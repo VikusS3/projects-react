@@ -1,6 +1,6 @@
 const headers = {
-  "x-rapidapi-key": "fa2f840eb9msh46ff1db4fb5a394p158470jsn01e9bdb3d085",
-  "x-rapidapi-host": "real-time-web-search.p.rapidapi.com",
+  "x-rapidapi-key": import.meta.env.VITE_RAPIDAPI_KEY,
+  "x-rapidapi-host": import.meta.env.VITE_RAPIDAPI_HOST,
 };
 
 export async function search({ query }) {
