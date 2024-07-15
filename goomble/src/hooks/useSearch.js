@@ -13,9 +13,6 @@ export default function useSearch({ initalQuery = "" }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log({
-      query,
-    });
     const data = await search({ query });
     if (data) {
       navigate("/results", { state: { data, query } });

@@ -3,7 +3,6 @@ import { useLocation } from "react-router-dom";
 export const SearchResults = () => {
   const location = useLocation();
   const { state } = location;
-  console.log(state);
 
   const results = state?.data || [];
 
