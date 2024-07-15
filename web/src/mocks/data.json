@@ -18,6 +18,15 @@
       "activo": true,
       "repo_url": "https://github.com/VikusS3/projects-react/tree/main/reloj-universal",
       "url": "https://universalhours.netlify.app/"
+    },
+    {
+      "id": 3,
+      "nombre": "Time Event",
+      "imagen": "/timeevent.webp",
+      "descripcion": "Aplicacion que te permite ingresar la hora y minutos de un evento y te muestra la hora que sera en los demas paises, junto con su bandera",
+      "activo": false,
+      "repo_url": "https://github.com/VikusS3/projects-react/tree/main/reloj-universal",
+      "url": "https://timevent.netlify.app/"
     }
   ]
 }

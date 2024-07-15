@@ -5,8 +5,8 @@ import { SearchResults } from "../components/SearchResults";
 
 export default function Results() {
   const location = useLocation();
-  const params = new URLSearchParams(location.search);
-  const query = params.get("query");
+  const { state } = location;
+  const query = state?.query || "";
   return (
     <div className="bg-[#181A1B] h-screen overflow-y-auto w-full">
       <header className="flex p-6 justify-between items-center">

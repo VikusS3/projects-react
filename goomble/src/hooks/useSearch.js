@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { search } from "../services/search";
 
 export default function useSearch({ initalQuery = "" }) {
   const searchRef = useRef();
@@ -10,13 +11,14 @@ export default function useSearch({ initalQuery = "" }) {
     setQuery(initalQuery);
   }, [initalQuery]);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     console.log({
       query,
     });
-    if (query.toLocaleLowerCase() === "website builder") {
-      navigate(`/results?query=${encodeURIComponent(query)}`);
+    const data = await search({ query });
+    if (data) {
+      navigate("/results", { state: { data, query } });
     }
   };
 
