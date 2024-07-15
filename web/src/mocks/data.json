@@ -27,6 +27,15 @@
       "activo": false,
       "repo_url": "https://github.com/VikusS3/projects-react/tree/main/reloj-universal",
       "url": "https://timevent.netlify.app/"
+    },
+    {
+      "id": 4,
+      "nombre": "Goomble",
+      "imagen": "/goomble.webp",
+      "descripcion": "No soy Google Soy Goomble. Proyecto que simula la busqueda de google, pero con un diseño diferente.",
+      "activo": true,
+      "repo_url": "https://github.com/VikusS3/projects-react/tree/main/goomble",
+      "url": "https://goomble.netlify.app/"
     }
   ]
 }
