@@ -36,6 +36,15 @@
       "activo": true,
       "repo_url": "https://github.com/VikusS3/projects-react/tree/main/goomble",
       "url": "https://goomble.netlify.app/"
+    },
+    {
+      "id": 5,
+      "nombre": "Country-World",
+      "imagen": "/countryworld.webp",
+      "descripcion": "Proyecto que te muestra la información de los paises del mundo. Utilizando la API de Rest Countries.",
+      "activo": true,
+      "repo_url": "https://github.com/VikusS3/country-world",
+      "url": "https://country-world-opal.vercel.app/"
     }
   ]
 }
